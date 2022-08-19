@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
+<head> 
    <title>Shopping Cart</title>
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,12 +45,12 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default"><i class="fas fa-minus"></i></button>
-                           <input type="number" min="0" class="form-control text-center" value="1">
-                           <button class="btn btn-default"><i class="fas fa-plus"></i></button>
+                           <button id="case-btn-minus" class="btn btn-default"><i class="fas fa-minus"></i></button>
+                           <input id="case-feild" type="number" min="0" class="form-control text-center" value="1">
+                           <button id="case-btn-plus" class="btn btn-default"><i class="fas fa-plus"></i></button>
 
                         </div>
-                        <h5>$59</h5>
+                        <h5>$<span id="price-feild">59</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
                      </div>
                   </div>
@@ -79,8 +79,9 @@
          </div>
       </div>
    </section>
-
+   <script src="js/common.js"></script>
    <script src="js/phone.js"></script>
+   <script src="js/case.js"></script>
 </body>
 
 </html>
